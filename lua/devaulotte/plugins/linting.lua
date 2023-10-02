@@ -17,6 +17,13 @@ return {
       php = { "phpcs" },
     }
 
+    lint.linters.phpcs.args = {
+      "--standard=PSR2",
+      "-q",
+      "--report=json",
+      "-",
+    }
+
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
     vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
