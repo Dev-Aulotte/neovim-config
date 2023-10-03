@@ -46,3 +46,8 @@ opt.swapfile = false
 
 -- show spaces on top/bottom when moving
 opt.scrolloff = 16
+
+vim.highlight.on_yank({
+  higroup = "IncSearch",
+  timeout = 40,
+})
