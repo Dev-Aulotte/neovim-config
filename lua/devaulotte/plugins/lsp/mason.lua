@@ -59,6 +59,6 @@ return {
     })
 
     -- Toggle mason
-    vim.api.nvim_set_keymap("n", "<Leader>pm", "<CMD>MasonToggle<CR>", { noremap = true, silent = true })
+    vim.api.nvim_set_keymap("n", "<Leader>pm", "<CMD>Mason<CR>", { noremap = true, silent = true })
   end,
 }
