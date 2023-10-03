@@ -54,7 +54,11 @@ return {
         "eslint_d", -- js linter
         "ruff",
         "phpcs",
+        "debugpy",
       },
     })
+
+    -- Toggle mason
+    vim.api.nvim_set_keymap("n", "<Leader>pm", "<CMD>MasonToggle<CR>", { noremap = true, silent = true })
   end,
 }
