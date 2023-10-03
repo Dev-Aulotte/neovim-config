@@ -61,6 +61,30 @@ return {
             cond = lazy_status.has_updates,
             color = { fg = "#ff9e64" },
           },
+          -- show active LSP
+          {
+            function()
+              local msg = ""
+              local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
+              local clients = vim.lsp.get_active_clients()
+              if next(clients) == nil then
+                return msg
+              end
+              for _, client in ipairs(clients) do
+                local filetypes = client.config.filetypes
+                if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
+                  if msg == "" then
+                    msg = client.name
+                  else
+                    msg = msg .. ", " .. client.name
+                  end
+                end
+              end
+              return msg
+            end,
+            icon = " LSP:",
+            color = { fg = "#7dcfff" },
+          },
           { "encoding" },
           { "fileformat" },
           { "filetype" },
