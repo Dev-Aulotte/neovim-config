@@ -1,6 +1,6 @@
 return {
   "stevearc/conform.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufRead", "BufNewFile" },
   config = function()
     local conform = require("conform")
 
@@ -20,11 +20,6 @@ return {
         php = { "prettierd" },
         lua = { "stylua" },
         python = { "isort", "black" },
-      },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
       },
     })
 
