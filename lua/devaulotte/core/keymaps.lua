@@ -83,7 +83,7 @@ keymap.set("n", "<leader>gt", "<cmd>GitGutterToggle<CR>", { desc = "Toggle git g
 
 -- Lazy shortcuts
 keymap.set("n", "<Leader>pl", "<cmd>Lazy<CR>", { desc = "Open Lazy" })
-keymap.set("n", "<Leader>ps", "<cmd>Lazy syng<CR>", { desc = "Synchronize Lazy" })
+keymap.set("n", "<Leader>ps", "<cmd>Lazy sync<CR>", { desc = "Synchronize Lazy" })
 keymap.set("n", "<Leader>pc", "<cmd>Lazy clear<CR>", { desc = "Clear Lazy" })
 keymap.set("n", "<Leader>pr", "<cmd>Lazy reload<CR>", { desc = "Reload Lazy" })
 keymap.set("n", "<Leader>pu", "<cmd>Lazy update<CR>", { desc = "Update Lazy" })

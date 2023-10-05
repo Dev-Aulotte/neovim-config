@@ -15,7 +15,7 @@ conform.setup({
     graphql = { "prettierd" },
     php = { "prettierd" },
     lua = { "stylua" },
-    python = { "isort", "black" },
+    python = { "isort", "autopep8" },
   },
 })
 
