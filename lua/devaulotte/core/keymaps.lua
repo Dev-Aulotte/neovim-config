@@ -9,7 +9,7 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("n", "<Leader><space>", "<CMD>source %<CR>", { desc = "Source current file" })
 
 -- close current buffer
-keymap.set("n", "<Leader>c", "<CMD>bd<CR>", { desc = "Close current buffer" })
+keymap.set("n", "<Leader>c", "<CMD>q<CR>", { desc = "Close current buffer", silent = true, noremap = true })
 
 -- use Ctrl c to exit insert mode
 keymap.set("i", "<C-c>", "<ESC>", { desc = "Exit insert mode" })

@@ -32,6 +32,7 @@ require("formatter").setup({
             "--stdin-filename",
             util.get_current_buffer_file_path(),
             "-",
+            "--line-length 80",
           },
           stdin = true,
         }
