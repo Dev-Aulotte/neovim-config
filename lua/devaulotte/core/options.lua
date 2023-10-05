@@ -51,3 +51,5 @@ vim.highlight.on_yank({
   higroup = "IncSearch",
   timeout = 40,
 })
+
+vim.diagnostic.config({ virtual_text = true })

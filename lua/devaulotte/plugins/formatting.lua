@@ -1,4 +1,4 @@
 return {
-  "stevearc/conform.nvim",
+  "mhartington/formatter.nvim",
   event = { "BufRead", "BufNewFile" },
 }

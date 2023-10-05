@@ -42,12 +42,13 @@ mason_tool_installer.setup({
     "prettierd", -- prettier formatter
     "stylua", -- lua formatter
     "isort", -- python formatter
-    "autopep8", -- python formatter
+    "black", -- python formatter
     "pylint", -- python linter
     "eslint_d", -- js linter
     "ruff",
     "phpcs",
     "debugpy",
+    "phpcbf",
   },
 })
 

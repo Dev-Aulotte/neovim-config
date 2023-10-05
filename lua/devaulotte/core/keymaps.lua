@@ -87,3 +87,7 @@ keymap.set("n", "<Leader>ps", "<cmd>Lazy sync<CR>", { desc = "Synchronize Lazy" 
 keymap.set("n", "<Leader>pc", "<cmd>Lazy clear<CR>", { desc = "Clear Lazy" })
 keymap.set("n", "<Leader>pr", "<cmd>Lazy reload<CR>", { desc = "Reload Lazy" })
 keymap.set("n", "<Leader>pu", "<cmd>Lazy update<CR>", { desc = "Update Lazy" })
+
+keymap.set("n", "<leader>lf", "<cmd>Format<cr>", { silent = true, desc = "Formattage du fichier" })
+keymap.set("n", "<leader>lF", "<cmd>FormatWrite<cr>", { silent = true, desc = "Formattage du fichier avec ecriture" })
+keymap.set("n", "<leader>lv", "<cmd>:VenvSelect<cr>", { silent = true, desc = "Selection du venv" })
