@@ -14,6 +14,7 @@ else # If user selected invalid choice, exit the script
 	exit 1
 fi
 
+echo ""
 echo "You can now launch nvim"
 echo ""
 echo "Enjoy!"
