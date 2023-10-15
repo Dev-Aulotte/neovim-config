@@ -38,6 +38,12 @@ return {
 				),
 				vim.keymap.set(
 					"n",
+					"<leader>ne",
+					"<cmd>Neorg export",
+					{ desc = "Export file" }
+				),
+				vim.keymap.set(
+					"n",
 					"<leader>ns",
 					"<cmd>Neorg generate-workspace-summary<cr>",
 					{ desc = "Generate workspace summary" }

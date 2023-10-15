@@ -14,7 +14,7 @@ vim.opt.smarttab = true
 -- Make tab visible
 vim.opt.list = true
 vim.opt.listchars = {
-	tab = "->",
+	tab = "-»",
 	trail = "·",
 	extends = "»",
 	precedes = "«",
