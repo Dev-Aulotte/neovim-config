@@ -1,8 +1,8 @@
 * Neovim Configuration
 ** Informations
-	 This configuration is based on [[https://nvchad.com/][NvChad]]. 
+	 This configuration is based on { https://nvchad.com/ }[NvChad]. 
 	 I have added some plugins and changed some settings for Go, Python, NodeJS and PHP development.
-	 I Also added a note taking plugin called [[https://github.com/nvim-neorg/neorg][Neorg]].
+	 I Also added a note taking plugin called { https://github.com/nvim-neorg/neorg }[Neorg].
 	 It contains plugins for ChatGPT And Copilot.
 
 ** Installation
