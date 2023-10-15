@@ -10,12 +10,12 @@ local opts = {
 		null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.prettier,
-		null_ls.builtins.formatting.phpcsfixer.with({
+		null_ls.builtins.formatting.phpcbf.with({
 			args = {
-				"--rules=@PSR12",
-				"--using-cache=no",
-				"--no-interaction",
-				"fix",
+				"--standard=PSR12",
+				"--report=json",
+				"-q",
+				"-",
 			},
 		}),
 
