@@ -17,5 +17,5 @@ Some plugins require some external dependencies like ripgrep and lazygit.
 In case you didl't have Neovim installed, you can install it with the following command:
 
 ```bash
-/install.sh
+./install.sh
 ```
