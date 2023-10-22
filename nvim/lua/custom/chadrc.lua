@@ -3,7 +3,7 @@ return {
 	plugins = "custom.plugins",
 	ui = {
 		theme = "catppuccin",
-		transparency = true,
+		transparency = false,
 
 		hl_override = {
 			Comment = { fg = "#e0e0e0", italic = true },

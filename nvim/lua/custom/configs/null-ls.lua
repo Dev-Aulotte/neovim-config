@@ -18,6 +18,11 @@ local opts = {
 				"-",
 			},
 		}),
+		null_ls.builtins.formatting.gofumpt,
+		null_ls.builtins.formatting.goimports,
+
+		-- code actions
+		null_ls.builtins.code_actions.gomodifytags,
 
 		-- Linter
 		null_ls.builtins.diagnostics.mypy,
