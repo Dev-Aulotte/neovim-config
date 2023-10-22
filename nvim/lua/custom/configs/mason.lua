@@ -10,10 +10,10 @@ local options = {
 	-- "phpcs",
 	-- "php-cs-fixer",
 	-- "black",
-	-- "debugpy",
-	-- "mypy",
-	-- "ruff",
-	-- "pyright",
+	"debugpy",
+	"mypy",
+	"ruff",
+	"pyright",
 }
 
 return options

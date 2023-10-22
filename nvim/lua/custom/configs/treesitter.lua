@@ -18,7 +18,7 @@ table.insert(options.ensure_installed, {
 	-- "typescript",
 	-- "tsx",
 	-- "php",
-	-- "python",
+	"python",
 })
 
 return options

@@ -50,9 +50,9 @@ local util = require("lspconfig/util")
 --   capabilities = capabilities,
 --   filetypes = { "php" },
 -- }
---
--- lspconfig.pyright.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
---   filetypes = { "python" },
--- }
+
+lspconfig.pyright.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "python" },
+})
