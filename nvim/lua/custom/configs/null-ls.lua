@@ -4,38 +4,38 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local opts = {
 	sources = {
 		-- formatter
-		null_ls.builtins.formatting.gofumpt,
-		null_ls.builtins.formatting.goimports_reviser,
-		null_ls.builtins.formatting.golines,
-		null_ls.builtins.formatting.black,
+		-- null_ls.builtins.formatting.gofumpt,
+		-- null_ls.builtins.formatting.goimports_reviser,
+		-- null_ls.builtins.formatting.golines,
+		-- null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.formatting.prettier,
-		null_ls.builtins.formatting.phpcbf.with({
-			args = {
-				"--standard=PSR12",
-				"--report=json",
-				"-q",
-				"-",
-			},
-		}),
-		null_ls.builtins.formatting.gofumpt,
-		null_ls.builtins.formatting.goimports,
+		-- null_ls.builtins.formatting.prettier,
+		-- null_ls.builtins.formatting.phpcbf.with({
+		-- 	args = {
+		-- 		"--standard=PSR12",
+		-- 		"--report=json",
+		-- 		"-q",
+		-- 		"-",
+		-- 	},
+		-- }),
+		-- null_ls.builtins.formatting.gofumpt,
+		-- null_ls.builtins.formatting.goimports,
 
 		-- code actions
-		null_ls.builtins.code_actions.gomodifytags,
+		-- null_ls.builtins.code_actions.gomodifytags,
 
 		-- Linter
-		null_ls.builtins.diagnostics.mypy,
-		null_ls.builtins.diagnostics.ruff,
-		null_ls.builtins.diagnostics.eslint,
-		null_ls.builtins.diagnostics.phpcs.with({
-			args = {
-				"--standard=PSR12",
-				"--report=json",
-				"-q",
-				"-",
-			},
-		}),
+		-- null_ls.builtins.diagnostics.mypy,
+		-- null_ls.builtins.diagnostics.ruff,
+		-- null_ls.builtins.diagnostics.eslint,
+		-- null_ls.builtins.diagnostics.phpcs.with({
+		-- 	args = {
+		-- 		"--standard=PSR12",
+		-- 		"--report=json",
+		-- 		"-q",
+		-- 		"-",
+		-- 	},
+		-- }),
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
