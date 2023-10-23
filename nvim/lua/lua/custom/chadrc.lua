@@ -3,10 +3,10 @@ return {
 	plugins = "custom.plugins",
 	ui = {
 		theme = "catppuccin",
-		transparency = false,
+		transparency = true,
 
 		hl_override = {
-			Comment = { italic = true },
+			Comment = { fg = "#e0e0e0", italic = true },
 			Conditional = { bold = true },
 		},
 
